@@ -66,6 +66,7 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
 							</GridProduct>
 						</div>
 					</SectionList>
+                    
 
 					{bannersBottom.length > 0 && (
 						<div className="py-content">
