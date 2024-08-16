@@ -278,7 +278,7 @@
             <tr>
                 <td valign="top">
                     <div class="text-xl">
-                        React <strong class="font-semibold text-xl">Ecommerce</strong>
+                        Abarrotes <strong class="font-semibold text-xl">Olán</strong>
                     </div>
                 </td>
                 <td>
@@ -289,11 +289,11 @@
                         <table class="inline-table w-auto mt-4">
                             <tr>
                                 <td class="font-semibold">Fecha de la factura:</td>
-                                <td class="text-gray-500">03/10/2018</td>
+                                <td class="text-gray-500">17/08/2024</td>
                             </tr>
                             <tr>
                                 <td class="font-semibold">Fecha de vencimiento:</td>
-                                <td class="text-gray-500">03/10/2018</td>
+                                <td class="text-gray-500">30/08/2024</td>
                             </tr>
                         </table>
 
@@ -394,13 +394,11 @@
                 Si tiene alguna pregunta sobre esta factura, utilice la siguiente información de contacto:
             </p>
             <div class="mt-2">
-                <p>{{ $company['email'] }}</p>
-                <p class="mt-1 not-italic">{{ $company['phone'] }}</p>
-                <address class="mt-1 not-italic">
-                    {{ $company['address'] }}
-                </address>
+                <p>abarrotesolan@gmail.com</p>
+                <p class="mt-1 not-italic">+52 9932601892</p>
+                <p class="mt-1 not-italic">Lotificación Sta. Lucía 133, Jose Maria Pino Suarez, Villahermosa, Tabasco</p>
             </div>
-            <p class="mt-2 text-sm text-gray-500">© {{ date('Y') }} React Ecommerce Inc.</p>
+            <p class="mt-2 text-sm text-gray-500">© {{ date('Y') }} Abarrotes Olán by tilines.</p>
         </div>
     </section>
 

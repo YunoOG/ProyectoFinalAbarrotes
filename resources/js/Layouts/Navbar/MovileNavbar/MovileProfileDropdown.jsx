@@ -16,13 +16,13 @@ function MovileProfileDropdown() {
 			<Dropdown.Content>
 				<Dropdown.Link href={route('profile')}>
 					<div className="flex items-center">
-						<UserCircleIcon className="h-5 w-5 mr-2 text-gray-400" />
+						<UserCircleIcon className="h-5 w-5 mr-2 text-gray-400 custom-icon-color" />
 						<span>Mi cuenta</span>
 					</div>
 				</Dropdown.Link>
 				<Dropdown.Link href={route('orders')}>
 					<div className="flex items-center">
-						<ShoppingBagIcon className="h-5 w-5 mr-2 text-gray-400" />
+						<ShoppingBagIcon className="h-5 w-5 mr-2 text-gray-400 custom-icon-color" />
 						<span>Ordenes</span>
 					</div>
 				</Dropdown.Link>

@@ -7,14 +7,12 @@ export default function Navbar({ auth }) {
 
     const navigation = [
 
+
         {
             name: 'Ofertas',
             href: 'offers'
         },
-        {
-            name: 'Blog',
-            href: 'blog'
-        },
+
         {
             name: 'Contactenos',
             href: 'contact'

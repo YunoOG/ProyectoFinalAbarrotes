@@ -13,7 +13,7 @@ import Breadcrumb from '@/Components/Breadcrumb'
 export default function Profile({ title, children, breadcrumb = [] }) {
 	const links = [
 		{
-			title: 'Dashboard',
+			title: 'Inicio',
 			path: 'profile.index',
 			Icon: HomeIcon
 		},

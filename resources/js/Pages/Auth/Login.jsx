@@ -92,7 +92,7 @@ export default function Login({ status, canResetPassword }) {
 					</div>
 				</div>
 				<div>
-					<PrimaryButton className="w-full mt-8 flex justify-center" disabled={processing} isLoading={processing}>
+					<PrimaryButton className=" w-full mt-8 flex justify-center custom-button-color " disabled={processing} isLoading={processing}>
 						Iniciar sesión
 					</PrimaryButton>
 				</div>

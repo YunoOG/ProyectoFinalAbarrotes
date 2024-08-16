@@ -7,7 +7,10 @@ import { Link, useForm, usePage } from '@inertiajs/react';
 import ProfileDropdown from './ProfileDropdown';
 import DepartmentDropdown from './DepartmentDropdown';
 import ApplicationLogo from '@/Components/ApplicationLogo';
+import NewLogo from '@/Components/NewLogo';
 import { formatCurrency } from '@/Helpers/helpers';
+import Tiendita from "@/components/Tiendita";
+
 
 export default function DesktopNavbar({ navigation }) {
 
@@ -25,21 +28,24 @@ export default function DesktopNavbar({ navigation }) {
     }
     return (
         <nav className="border-b  hidden lg:block">
-            {settings.rates.freeShipping && (
-                <p className="flex h-10 items-center justify-center gradient-primary px-4 text-sm text-white sm:px-6 lg:px-8">
-                    Obtenga envío gratuito en pedidos superiores a {formatCurrency(settings.rates.freeShipping)}
-                </p>
-            )}
+
 
             <div className="container pt-4">
                 <div className='relative text-sm grid grid-cols-12 gap-x-5  items-center'>
                     <div className='col-span-3'>
-                        <ApplicationLogo />
+                        <div >
+                            <div className="flex items-center gap-x-3">
+                                <div>
+                                    <Tiendita className="w-[200px] h-[200px] text-white" />
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                     <div className="w-full md:col-span-7 ">
                         <div >
-                            <form onSubmit={handleSubmit} className="overflow-hidden border-2 border-primary-600 bg-primary-600 flex rounded-lg shadow-sm">
+                            <form onSubmit={handleSubmit} className="overflow-hidden border-2 border-[#314528] bg-[#314528] flex rounded-lg shadow-sm">
                                 <input
                                     id="search-main"
                                     type="text"

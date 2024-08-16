@@ -1,9 +1,23 @@
 import { Link, usePage } from "@inertiajs/react"
 import Suscribe from "./Suscribe"
 import ApplicationLogo from "@/Components/ApplicationLogo"
+import NewLogo from "@/components/NewLogo";
+import Tiendita from "@/components/Tiendita";
 
 const Footer = () => {
     const { settings } = usePage().props;
+    const updatedSettings = {
+        ...settings,
+        company: {
+            ...settings.company,
+            email: 'abarrotesolan@gmail.com',
+            address: 'Lotificación Santa Lucía 133, Jose Maria Pino Suarez, Villahermosa, Tabasco',
+            phone: '+52 993 456 7890',
+            name: 'Abarrotes Olan by Tilines',
+            entry: 'En el corazón de Tabasco, Abarrotes Olan es más que una tienda; somos parte de la comunidad. Ofrecemos una gran variedad de productos con la calidez y atención que solo una tienda local puede brindar. ',
+
+        },
+    };
     return (
         <>
             <div className="container py-content">
@@ -14,31 +28,34 @@ const Footer = () => {
                 <div className="container  ">
                     <div className="py-content grid grid-cols-2 lg:grid-cols-5 gap-8">
                         <div className="col-span-2 ">
-                            <div className="flex-shrink-0 flex items-center text-primary-600">
+                            <div >
+                                <div className="flex items-center gap-x-3">
+                                    <div className="text-custom-color text-lg text-center whitespace-nowrap font-semibold">
+                                        Abarrotes Olán
+                                    </div>
 
-                                <ApplicationLogo />
-
+                                </div>
                             </div>
                             <p className="text-sm leading-6 mt-2 text-gray-600">
-                                {settings.company.entry}
+                            {updatedSettings.company.entry}
                             </p>
                         </div>
 
                         <div className="text-sm">
                             <Link href="/contact-us" className="block">
-                                <h4 className="font-medium ">
+                                <h4 className="font-medium font-semibold">
                                     Contacto
                                 </h4>
                             </Link>
                             <div className="mt-2 space-y-2 text-sm font-light">
-                                <div>{settings.company.email}</div>
-                                <div>{settings.company.address}</div>
-                                <div>{settings.company.phone}</div>
+                                <div className="font-light">{updatedSettings.company.email}</div>
+                                <div className="font-light">{updatedSettings.company.address}</div>
+                                <div className="font-light">{updatedSettings.company.phone}</div>
                             </div>
                         </div>
 
                         <div className="text-sm">
-                            <h4 className="font-medium ">
+                            <h4 className="font-medium font-semibold">
                                 Porque elegirnos
                             </h4>
                             <h4 className="font-medium text-lg  "></h4>
@@ -57,19 +74,19 @@ const Footer = () => {
                         </div>
 
                         <div className="text-sm">
-                            <h4 className="font-medium  ">Top Categorias</h4>
+                            <h4 className="font-medium font-semibold ">Top Categorias</h4>
                             <div className="mt-2 space-y-2  font-light">
                                 <Link href={route('search', { 'categories[]': "teclados" })} className="block">
-                                    Teclados
+                                    Bebidas
                                 </Link>
                                 <Link href={route('search', { 'categories[]': "mouses" })} className="block">
-                                    Mouses
+                                    Alimentos
                                 </Link>
                                 <Link href={route('search', { 'categories[]': "procesadores" })} className="block">
-                                    Procesadores
+                                    Hogar y limpieza
                                 </Link>
                                 <Link href={route('search', { 'categories[]': "ram" })} className="block">
-                                    Ram
+                                    Higiene
                                 </Link>
                                 {/* <Link href={route('search', { 'categories[]': "almacenamiento" })} className="block">
 									Ssd
@@ -80,7 +97,7 @@ const Footer = () => {
                     <div className="border-t py-6">
                         <div className="flex items-center justify-between text-sm text-gray-500">
                             <p>
-                                © 2020 {settings.company.name}. All rights reserved.
+                                © 2024 {updatedSettings.company.name}. Reservados todos los derechos.
                             </p>
                             <div className="flex items-center gap-5">
                                 <a href={settings.social.facebook} target="_blank">

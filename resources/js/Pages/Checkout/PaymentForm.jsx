@@ -108,7 +108,7 @@ function PaymentForm() {
 			</div>
 
 			<div className="sm:col-span-6">
-				<InputLabel htmlFor="card-element">Targeta de credito</InputLabel>
+				<InputLabel htmlFor="card-element">Tarjeta de credito</InputLabel>
 				<div className={" py-2.5 px-3 rounded-md " + ((errorCard) ? 'ring-inset ring-2 ring-red-500' : 'border')}>
 					<CardElement id="card-element" options={CARD_ELEMENT_OPTIONS} />
 				</div>
@@ -118,7 +118,7 @@ function PaymentForm() {
 
 			</div>
 			<div className="sm:col-span-6">
-				<PrimaryButton className="w-full mt-4" onClick={handleSubmit}
+				<PrimaryButton className="w-full mt-4 " onClick={handleSubmit}
 					isLoading={loading} disabled={loading}>
 					Pagar {formatCurrency(total.total)}
 				</PrimaryButton>

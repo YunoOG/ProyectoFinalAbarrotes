@@ -28,7 +28,7 @@ export default function Register() {
 
 	return (
 		<GuestLayout title="Registro">
-			<Head title="Registro" />
+			<Head  title="Registro" className="text-custom-color"/>
 
 			<form onSubmit={submit}>
 				<div>
@@ -104,10 +104,10 @@ export default function Register() {
 						href={route('login')}
 						className="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-800"
 					>
-						¿Ya registrado?
+						¿Ya estás registrado?
 					</Link>
 
-					<PrimaryButton className="ml-4" disabled={processing}>
+					<PrimaryButton className="ml-4 custom-button-color" disabled={processing}>
 						Registrar
 					</PrimaryButton>
 				</div>

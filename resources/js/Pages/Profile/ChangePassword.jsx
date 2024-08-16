@@ -73,7 +73,7 @@ const ChangePassword = () => {
 							<InputError message={errors.password_confirmation} />
 						</div>
 						<div className="text-right sm:col-span-6">
-							<PrimaryButton isLoading={processing} disabled={processing} >Guardar</PrimaryButton>
+							<PrimaryButton className="custom-button-color   " isLoading={processing} disabled={processing} >Guardar</PrimaryButton>
 						</div>
 					</FormGrid>
 

@@ -30,7 +30,7 @@ const ContactForm = () => {
 	return (
 		<div>
 			<div>
-				<SectionTitle title="Ponerse en contacto"></SectionTitle>
+				<SectionTitle className="text-custom-verd" title="Ponerse en contacto"></SectionTitle>
 
 				<div className="mt-5">
 					<form className="space-y-5" onSubmit={handleSubmit}>
@@ -83,8 +83,8 @@ const ContactForm = () => {
 								value={data.message}
 								onChange={e => setData('message', e.target.value)} className="w-full mt-1" name="message" id="" rows="5"></Textarea>
 						</div>
-						<div className="text-right">
-							<PrimaryButton disabled={processing}>Enviar Mensaje</PrimaryButton>
+						<div className="text-right ">
+							<PrimaryButton className="justify-center bg-[#314528] hover:bg-[#2a3d21]"disabled={processing}>Enviar Mensaje</PrimaryButton>
 						</div>
 
 					</form>

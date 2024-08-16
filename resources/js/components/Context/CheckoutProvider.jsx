@@ -12,7 +12,7 @@ export default function CheckoutProvider({ children }) {
 		phone: auth.user.phone,
 		email: auth.user.email,
 		city: auth.user.city,
-		postalCode: "112233",
+		postalCode: auth.user.postalCode,
 		note: note,
 		paymentMethodId: null
 	})

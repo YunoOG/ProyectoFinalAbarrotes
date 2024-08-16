@@ -18,7 +18,7 @@ export default function Contact({ page }) {
 
 				}]} />
 
-			<div className="container ">
+			<div className="container text-custom-color">
 				<Hero title="Contáctenos" />
 				<div className="py-content flex flex-col lg:flex-row ">
 					<div className="w-full lg:w-5/12  my-8  lg:my-0 lg:mr-8">

@@ -23,9 +23,9 @@ const Suscribe = () => {
             <div className="flex flex-col lg:flex-row  gap-y-8 lg:gap-y-0 gap-x-0 md:gap-x-16  lg:items-center lg:justify-between">
                 <div className="lg:w-1/2 text-center lg:text-left">
                     <h3 className="text-xl lg:text-2xl font-semibold mb-2 lg:mb-4">
-                        Obtenga consejos de profesionales en su bandeja de entrada
+                        ¡No te pierdas nuestras últimas noticias y ofertas!
                     </h3>
-                    <p className="lg:text-base">Suscríbase a nuestro boletín y manténgase actualizado.</p>
+                    <p className="lg:text-base">Suscríbete a nuestro boletín para recibir actualizaciones exclusivas, promociones especiales y más directamente en tu correo electrónico.</p>
                 </div>
                 <div className="lg:w-1/2 ">
                     <form onSubmit={handleSubmit} className="flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 gap-x-0 lg:gap-x-3">
@@ -40,9 +40,10 @@ const Suscribe = () => {
 
 
                         </div>
-                        <PrimaryButton className="justify-center" disabled={processing} isLoading={processing}>Suscribirse</PrimaryButton>
+                        <PrimaryButton className="justify-center bg-[#314528] hover:bg-[#2a3d21]" disabled={processing} isLoading={processing}>
+                            Enviar</PrimaryButton>
                     </form>
-                    <InputError className="mt-1.5" message={errors.email} />
+                    <InputError className="mt-1.5 " message={errors.email} />
 
                 </div>
             </div>

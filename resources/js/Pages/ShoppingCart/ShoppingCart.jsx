@@ -31,7 +31,7 @@ const ShoppingCart = ({ cardProducts, total }) => {
                                     <OrderSummary total={total} />
                                 </div>
                                 <div className="text-right mt-6 ">
-                                    <PrimaryButton onClick={handleClickCheckout} isLoading={processing} disabled={processing}>Comprar ahora</PrimaryButton>
+                                    <PrimaryButton className="custom-button-color" onClick={handleClickCheckout} isLoading={processing} disabled={processing}>Comprar ahora</PrimaryButton>
                                 </div>
                             </>
                         ) : (

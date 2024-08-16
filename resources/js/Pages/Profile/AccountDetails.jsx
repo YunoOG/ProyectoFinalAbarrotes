@@ -81,7 +81,7 @@ const AccountDetails = () => {
 							<InputError message={errors.country} />
 						</div>
 						<div className="text-right sm:col-span-6">
-							<PrimaryButton disabled={processing} isLoading={processing}>Guardar</PrimaryButton>
+							<PrimaryButton className="custom-button-color" disabled={processing} isLoading={processing}>Guardar</PrimaryButton>
 						</div>
 					</FormGrid>
 
