@@ -1,6 +1,6 @@
 # Abarrotes Olan
 
-**Abarrotes Olan** es un proyecto de gestión y ventas desarrollado utilizando Laravel y React. Este README contiene las instrucciones necesarias para instalar y configurar el proyecto en tu entorno local.
+**Abarrotes Olan** es un proyecto final dirigido a Abarrotes Oán utilizando Laravel y React. Este README contiene las instrucciones necesarias para instalar y configurar el proyecto en tu entorno local.
 
 ![Abarrotes Olan Banner](https://via.placeholder.com/800x300.png?text=Abarrotes+Olan)
 
@@ -51,7 +51,7 @@ En el directorio raíz, encontrarás el archivo `.env.example`. Duplícalo y ren
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=dbsistemaventas
+DB_DATABASE=proyectoAbarrotes
 DB_USERNAME=root
 DB_PASSWORD=
 ```
