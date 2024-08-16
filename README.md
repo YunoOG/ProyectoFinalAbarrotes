@@ -1,81 +1,90 @@
+# Abarrotes Olan
 
-Abarrotes Olan
-Abarrotes Olan es un proyecto de gestión y ventas desarrollado utilizando Laravel y React. Este README contiene las instrucciones necesarias para instalar y configurar el proyecto en tu entorno local.
+**Abarrotes Olan** es un proyecto de gestión y ventas desarrollado utilizando Laravel y React. Este README contiene las instrucciones necesarias para instalar y configurar el proyecto en tu entorno local.
 
-Requisitos previos
+![Abarrotes Olan Banner](https://via.placeholder.com/800x300.png?text=Abarrotes+Olan)
+
+## 📋 Requisitos previos
+
 Antes de comenzar, asegúrate de tener instalados los siguientes componentes en tu sistema:
 
-Node.js (versión recomendada: última versión LTS)
-Composer
-PHP
-MySQL
-Git (opcional)
-Instalación
-Sigue los siguientes pasos para instalar y configurar el proyecto:
+- Node.js (versión recomendada: última versión LTS)
+- Composer
+- PHP
+- MySQL
+- Git (opcional)
 
-Clona el repositorio:
+## 🛠️ Instalación
 
-bash
-Copiar código
+### 1. Clonar el repositorio
+
+```bash
 git clone <url-del-repositorio>
 cd nombre-del-repositorio
-Instala las dependencias de npm:
+```
 
-bash
-Copiar código
+### 2. Instalar dependencias de npm
+
+```bash
 npm install
 npm install react@latest react-dom@latest
 npm install i @vitejs/plugin-react
-Actualiza las dependencias de Composer:
+```
 
-bash
-Copiar código
+### 3. Actualizar dependencias de Composer
+
+```bash
 composer update
-Instala las dependencias de Composer:
+```
 
-bash
-Copiar código
+### 4. Instalar dependencias de Composer
+
+```bash
 composer install
-Configura el archivo .env:
+```
 
-En el directorio raíz, encontrarás el archivo .env.example.
+### 5. Configurar el archivo `.env`
 
-Duplícalo y renombra la copia como .env.
+En el directorio raíz, encontrarás el archivo `.env.example`. Duplícalo y renómbralo como `.env`. Luego, modifica el archivo `.env` según las configuraciones de tu proyecto:
 
-Modifica el archivo .env según las configuraciones de tu proyecto. Un ejemplo de configuración de base de datos:
-
-env
-Copiar código
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=dbsistemaventas
 DB_USERNAME=root
 DB_PASSWORD=
-Genera la clave de seguridad de la aplicación:
+```
 
-bash
-Copiar código
+### 6. Generar la clave de seguridad
+
+```bash
 php artisan key:generate
-Crea la base de datos:
+```
 
-Accede a PHPMyAdmin y crea una nueva base de datos.
-Puedes nombrarla como desees, pero por defecto se recomienda usar dbsistemaventas.
-Ejecuta las migraciones:
+### 7. Ejecutar las migraciones
 
-bash
-Copiar código
+```bash
 php artisan migrate
-Ejecuta los seeders:
+```
 
-Esto creará un usuario administrador en la base de datos.
-Puedes revisar las credenciales del usuario en el archivo database/seeders/UserSeeder.
-bash
-Copiar código
+### 8. Ejecutar los seeders
+
+Esto creará un usuario administrador en la base de datos. Puedes revisar las credenciales del usuario en el archivo `database/seeders/UserSeeder`.
+
+```bash
 php artisan db:seed
-Inicia el servidor de desarrollo:
+```
 
-bash
-Copiar código
+### 9. Iniciar el servidor de desarrollo(los dos al mismo tiempo en diferente terminales)
+
+```bash
 php artisan serve
 npm run dev
+```
+
+## 🤝 Equipo
+
+Crea un fork del repositorio, realiza tus cambios y envía un pull request. 
+
+
