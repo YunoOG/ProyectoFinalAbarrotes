@@ -716,6 +716,30 @@ header {
 
 }
 
+.nav-Abarrotes a{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding: 12px 0;
+  margin: 2%;
+  border-radius: 5px;
+
+
+}
+
+.nav-Abarrotes-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+  }
+
+  .nav-Abarrotes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
 
 
 
@@ -1261,6 +1285,13 @@ ul {
 .custom-color{
     color: #ffffff;
 }
+
+.text-custom-color{
+    color: #ffffff;
+}
+
+
+
 
 
 .custom-button-color {

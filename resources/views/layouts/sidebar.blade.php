@@ -1,7 +1,7 @@
 @php
     $navigation_1 = [
         [
-            'title' => 'Home',
+            'title' => 'Inicio',
             'route' => 'dashboard.home',
             'icon' => 'heroicon-m-home',
         ],
@@ -31,11 +31,11 @@
             'route' => 'dashboard.banners',
             'icon' => 'heroicon-m-photo',
         ],
-        // [
-        //     'title' => 'Marcas',
-        //     'route' => 'dashboard.brands',
-        //     'icon' => 'heroicon-m-tag',
-        // ],
+        [
+             'title' => 'Proveedores',
+             'route' => 'dashboard.brands',
+             'icon' => 'heroicon-m-tag',
+        ],
         [
             'title' => 'Categorias',
             'route' => 'dashboard.categories',
@@ -55,20 +55,11 @@
     ];
 
     $navigation_2 = [
-        [
-            'title' => 'Post',
-            'route' => 'dashboard.posts',
-            'icon' => 'heroicon-m-newspaper',
-        ],
-        [
-            'title' => 'Autores',
-            'route' => 'dashboard.authors',
-            'icon' => 'heroicon-m-pencil',
-        ],
+
     ];
     $navigation_3 = [
         [
-            'title' => 'Setting',
+            'title' => 'Ajustes',
             'route' => 'dashboard.settings',
             'icon' => 'heroicon-m-cog-6-tooth',
         ],
@@ -77,13 +68,21 @@
 <div class="w-72 flex bg-neutral-900 z-40 ">
     <div class=" flex flex-col overflow-y-auto w-full gap-y-3 ">
         <div class="flex items-center gap-[13px] px-6 py-3">
-            <x-application-logo class="block w-auto fill-current text-white dark:text-neutral-200" />
+            <div  class="nav-Abarrotes-container">
+                <li class="nav-Abarrotes">
+                    <a href="#">
+                        <img src="imag/carritoCanva.png" id="carritoCanva" alt="">
+
+                    </a>
+                </li>
+                <h1 class="">Abarrotes Olán</h1>
+            </div>
         </div>
         <nav class="flex flex-col flex-1 divide-y divide-neutral-600/10">
             <x-sidebar.sidebar-list :list-navigation="$navigation_1" />
 
             <div class="grow">
-                <x-sidebar.sidebar-list title="Blog" :list-navigation="$navigation_2" />
+                <x-sidebar.sidebar-list title="" :list-navigation="$navigation_2" />
             </div>
 
             <x-sidebar.sidebar-list :list-navigation="$navigation_3" />
