@@ -107,6 +107,22 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
 
                 </section>
 
+                <section>
+                    <div className="container ">
+
+                        <SectionList title={"Categorias"}>
+                            <CarouselSection items={categoriesProductCount} searchType="categories[]" />
+                        </SectionList>
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
 
 
                 <section >
