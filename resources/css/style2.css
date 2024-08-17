@@ -25,7 +25,7 @@ section{
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url(imag/abarrotes.jpg)no-repeat;
+    background: url(ig/abarrotes.jpg)no-repeat;
 }
 
 .container {
@@ -156,19 +156,19 @@ header {
 }
 
 .Inicio .content h3 {
-    font-size: 5.6rem;
+    font-size: 4.5rem;
     color: #112311;
 }
 
 .Inicio .content span {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #112311;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .Inicio .content p {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     color: #112311;
     padding: 1rem 0;
     line-height: 1.5;
@@ -188,7 +188,7 @@ header {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url('../img/abarrotes.png') no-repeat;
+    background: url('../img/abarrotes.jpg') no-repeat;
     background-size: cover;
 
 }

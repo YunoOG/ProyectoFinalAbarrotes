@@ -24,9 +24,7 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
                         <h3>El mejor abarrotes</h3>
                         <span>Abarrotes Olán</span>
                         <p>En el corazón de Tabasco, Abarrotes Olan es más que una tienda; somos parte de la comunidad. Ofrecemos una gran variedad de productos con la calidez y atención que solo una tienda local puede brindar.</p>
-                        <a href="#" className="btn">
-                            <button>Button</button>
-                        </a>
+
                         <div className=""></div>
 
                         <div className="social-container">

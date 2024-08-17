@@ -3,7 +3,7 @@
     <dl class=" divide-y divide-neutral-100">
 
         <x-list-description title="Codigo" :desc="$order->code">
-            <x-slot:title>Methodo de pago</x-slot:title>
+            <x-slot:title>Metodo de pago</x-slot:title>
             <x-slot:desc>{{ $order->payment->method->text() }}</x-slot:desc>
         </x-list-description>
 
