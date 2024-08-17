@@ -33,6 +33,11 @@ body {
     margin: 0 auto;
 }
 
+.container1 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #F1F1F1;
     padding: 15px 0;

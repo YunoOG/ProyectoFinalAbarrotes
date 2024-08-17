@@ -104,7 +104,7 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
                 </section>
 
                 <section>
-                    <div className="container ">
+                    <div className="container1 ">
 
                         <SectionList title={"Categorias"}>
                             <CarouselSection items={categoriesProductCount} searchType="categories[]" />
@@ -123,6 +123,7 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
 
                 <section >
 
+                    <div className='container1 '>
                     {(bestSeller.length > 0) && (
                         <SectionList title="Los mas vendidos">
 
@@ -139,12 +140,13 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
                             <Banner image={bannersMedium[0]} />
                         </div>
                     )}
+                    </div>
 
                 </section>
 
 
                 <section>
-                    <div className="container ">
+                    <div className="container1  ">
 
                         <SectionList title={"Los recién llegados"}>
                             <div className=" py-2 relative">
