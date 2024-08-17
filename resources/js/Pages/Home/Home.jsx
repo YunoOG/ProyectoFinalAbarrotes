@@ -23,9 +23,7 @@ export default function Home({ page, carouselTop, bannersTop, bestSeller, banner
                     <div className="content">
                         <h3>El mejor abarrotes</h3>
                         <span>Abarrotes Olán</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A mollitia nesciunt necessitatibus porro quae
-                            nostrum blanditiis, voluptatibus, vel, fugit cum nihil quo fuga. At architecto numquam possimus
-                            recusandae atque molestias.</p>
+                        <p>En el corazón de Tabasco, Abarrotes Olan es más que una tienda; somos parte de la comunidad. Ofrecemos una gran variedad de productos con la calidez y atención que solo una tienda local puede brindar.</p>
                         <a href="#" className="btn">
                             <button>Button</button>
                         </a>

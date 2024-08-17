@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className="col-span-2 ">
                             <div >
                                 <div className="flex items-center gap-x-3">
-                                    <div className="text-custom-color text-lg text-center whitespace-nowrap font-semibold">
+                                    <div className="text-custom-color4 text-lg text-center whitespace-nowrap font-semibold">
                                         Abarrotes Olán
                                     </div>
 

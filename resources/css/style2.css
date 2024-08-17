@@ -12,9 +12,9 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 71.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 5rem;
     overflow-x: hidden;
 }
 
@@ -156,7 +156,7 @@ header {
 }
 
 .Inicio .content h3 {
-    font-size: 6rem;
+    font-size: 5.6rem;
     color: #112311;
 }
 
@@ -1270,7 +1270,7 @@ ul {
 }
 
 /* styles.css */
-.text-custom-color {
+.text-custom-color4 {
     color: #314528;
 }
 
